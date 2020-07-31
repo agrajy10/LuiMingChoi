@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="packages/core/main.min.css">
     <link rel="stylesheet" href="packages/daygrid/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -50,7 +52,7 @@
                     <div>
                         <input type="text" placeholder="名稱" name="">
                         <div class="input-group">
-                            <input type="password"  placeholder="密碼">
+                            <input type="password" placeholder="密碼">
                             <button type="submit"><span>登入</span></button>
                         </div>
                     </div>
@@ -136,6 +138,49 @@
         </header>
         <!--site-header-->
 
+        </style>
+
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide"
+                    style="background: url('images/slide-1.jpg') no-repeat center center; background-size: cover;">
+                    <div class="slide-cpt">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url('images/slide-2.jpg') no-repeat center center; background-size: cover;">
+                    <div class="slide-cpt">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url('images/slide-2.jpg') no-repeat center center; background-size: cover;">
+                    <div class="slide-cpt">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url('images/slide-1.jpg') no-repeat center center; background-size: cover;">
+                    <div class="slide-cpt">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </div>
+                </div>
+                <div class="swiper-slide"
+                    style="background: url('images/slide-2.jpg') no-repeat center center; background-size: cover;">
+                    <div class="slide-cpt">
+                        <span> Lorem ipsum dolor sit amet consectetur adipisicing.</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
+
         <main class="site-main-content py-4">
 
             <div class="container">
@@ -145,27 +190,27 @@
                     <div class="col-md-3">
 
                         <div class="content-block">
-    
+
                             <div class="title">
-    
+
                                 <h2><img src="images/calendar-icon.png" alt="Events"> 校曆表</h2>
-    
+
                             </div>
-    
+
                             <div class="content">
 
                                 <div id="homeCalendar"></div>
-    
+
                                 <ul>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                 </ul>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
 
                     <div class="col-md-5">
@@ -173,13 +218,13 @@
                         <div class="content-block">
 
                             <div class="title">
-    
+
                                 <h2><img src="images/speaker-icon.png" alt="Events"> 最新消息</h2>
-    
+
                             </div>
-    
+
                             <div class="content">
-    
+
                                 <div class="lt-event-item">
                                     <div class="item-thumb">
                                         <a href="#">
@@ -191,7 +236,7 @@
                                         <h3><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></h3>
                                     </div>
                                 </div>
-    
+
                                 <div class="lt-event-item">
                                     <div class="item-thumb">
                                         <a href="#">
@@ -203,7 +248,7 @@
                                         <h3><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></h3>
                                     </div>
                                 </div>
-    
+
                                 <div class="lt-event-item">
                                     <div class="item-thumb">
                                         <a href="#">
@@ -215,7 +260,7 @@
                                         <h3><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></h3>
                                     </div>
                                 </div>
-    
+
                                 <div class="lt-event-item">
                                     <div class="item-thumb">
                                         <a href="#">
@@ -227,15 +272,15 @@
                                         <h3><a href="#">Lorem ipsum, dolor sit amet consectetur adipisicing.</a></h3>
                                     </div>
                                 </div>
-    
+
                             </div>
-    
+
                             <div class="bottom">
-    
+
                                 <a href="#" class="read-more">更多+</a>
-    
+
                             </div>
-    
+
                         </div>
 
                     </div>
@@ -245,10 +290,11 @@
                         <div class="user-links">
 
                             <a href="#"><img src="images/principal-msg.jpg" class="img-fluid" alt="principal-msg"></a>
-                            <a href="#"><img src="images/admission-application.jpg" class="img-fluid"  alt="principal-msg"></a>
-                            <a href="#"><img src="images/school-notice.jpg" class="img-fluid"  alt="principal-msg"></a>
-                            <a href="#"><img src="images/school-articles.jpg" class="img-fluid"  alt="principal-msg"></a>
-                            <a href="#"><img src="images/media-reports.jpg" class="img-fluid"  alt="principal-msg"></a>
+                            <a href="#"><img src="images/admission-application.jpg" class="img-fluid"
+                                    alt="principal-msg"></a>
+                            <a href="#"><img src="images/school-notice.jpg" class="img-fluid" alt="principal-msg"></a>
+                            <a href="#"><img src="images/school-articles.jpg" class="img-fluid" alt="principal-msg"></a>
+                            <a href="#"><img src="images/media-reports.jpg" class="img-fluid" alt="principal-msg"></a>
 
                         </div>
 
@@ -257,71 +303,71 @@
                     <div class="col-md-6">
 
                         <div class="content-block v2">
-    
+
                             <div class="title">
-    
+
                                 <h2><img src="images/gallery-icon.png" alt="Events"> 活動相簿</h2>
-    
+
                             </div>
-    
+
                             <div class="content">
-    
+
                                 <div class="featured-item">
-    
+
                                     <a href="#">
                                         <div class="item-info">
                                             <span>2020-03-20</span>
                                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
                                         </div>
                                     </a>
-    
+
                                 </div>
-    
+
                                 <ul>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                 </ul>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
-    
+
                     <div class="col-md-6">
-    
+
                         <div class="content-block v2">
-    
+
                             <div class="title">
-    
+
                                 <h2><img src="images/achievments-icon.png" alt="Events"> 學生成就</h2>
-    
+
                             </div>
-    
+
                             <div class="content">
-    
+
                                 <div class="featured-item">
-    
+
                                     <a href="#">
                                         <div class="item-info">
                                             <span>2020-03-20</span>
                                             <h3>Lorem ipsum dolor sit amet, consectetur adipisicing.</h3>
                                         </div>
                                     </a>
-    
+
                                 </div>
-    
+
                                 <ul>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                 </ul>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                     </div>
 
                 </div>
@@ -338,25 +384,25 @@
                 <div class="container">
 
                     <div class="row">
-    
+
                         <div class="col-md-5 py-4 ml-auto">
-    
+
                             <img src="images/footer-logo.png" class="img-fluid"
                                 alt="SKH St. Simon's Lui Ming Choi Secondary School">
-    
+
                             <address>
                                 <span><i class="fas fa-map-marker-alt"></i>地址: 新界屯門鄉事會路85號
                                     (屯門西鐵站F2出口) <a href="#" lang="en">Map</a>
                                 </span>
-    
+
                                 <span> <i class="fas fa-phone"></i> 電話: 24598236 / 39567900</span>
                                 <span> <i class="fas fa-fax"></i> 傳真: 26183155</span>
                                 <span> <i class="fas fa-envelope"></i> 電郵: lmc@skhsslmc.edu.hk</span>
-    
+
                             </address>
-    
+
                         </div>
-    
+
                         <div class="col-md-6 py-4">
                             <ul>
                                 <li><a href="#">WebSAMS</a></li>
@@ -374,12 +420,12 @@
                                 <li><a href="">(字典) TheFreeDictionary</a></li>
                                 <li><a href="">香港學界體育聯會</a></li>
                             </ul>
-    
+
                         </div>
-    
+
                     </div>
-    
-    
+
+
                 </div>
                 <!--container-->
 
@@ -410,7 +456,7 @@
                         <div>
                             <input type="text" placeholder="名稱" name="">
                             <div class="input-group">
-                                <input type="password"  placeholder="密碼">
+                                <input type="password" placeholder="密碼">
                                 <button type="submit"><span>登入</span></button>
                             </div>
                         </div>
@@ -429,10 +475,12 @@
     <script src="packages/core/main.min.js"></script>
     <script src="packages/daygrid/main.min.js"></script>
     <script src="packages/interaction/main.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             var calendarEl = document.getElementById('homeCalendar');
 
             var schoolCalendar = new FullCalendar.Calendar(calendarEl, {
@@ -445,11 +493,31 @@
                     center: 'title',
                     right: 'next'
                 },
-                contentHeight : 'auto'
+                contentHeight: 'auto'
             });
 
             schoolCalendar.render();
         });
+
+        var mySwiper = new Swiper('.swiper-container', {
+            // Optional parameters
+            loop: true,
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            slidesPerView: 1,
+            centeredSlides: true,
+            spaceBetween: 10,
+            breakpoints : {
+                768 : {
+                    slidesPerView : 'auto', 
+                    centeredSlides: true
+                }
+            }
+
+        })
     </script>
 
 
