@@ -1137,12 +1137,17 @@ color: #ffffff;
     margin: 0 auto 30px auto;
 }
 
+#calendar .fc-view-container {
+    max-width: 700px;
+    margin:  0 auto;
+}
+
 #calendar .fc-view {
-    background: #e6f3f9;
+    background: #fbfee7;
 }
 
 #calendar .fc-today {
-    background: #d8eaf2;
+    background: #f1f5da;
 }
 
 #calendar .fc-toolbar {
@@ -1158,7 +1163,7 @@ color: #ffffff;
     height: 100%;
     top: 0;
     left: 0;
-    background: #1c8de3;
+    background: #cd3538;
     z-index: 1;
 }
 
@@ -1216,11 +1221,15 @@ color: #ffffff;
     font-size: 35px;
     color: #990000;
     font-weight: 700;
+    margin-bottom: 15px;
 }
 
 .event-item {
     background-color: #ffffff;
     padding: 15px;
+    line-height: 1.3;
+    margin-bottom: 20px;
+    box-shadow: 2px 2px 3px 0px rgba(0, 0, 0, 0.11);
 }
 
 .event-item .date {
@@ -1229,10 +1238,13 @@ color: #ffffff;
     justify-content: center;
     flex-direction: column;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 35px;
     text-align: center;
-    line-height: 1;
+    line-height: 1.3;
+    margin-bottom: 15px;
     color: #990000;
+    border:1px solid #e2d8d2;
+    padding: 10px;
 }
 
 .event-item .date span {
@@ -1251,6 +1263,10 @@ color: #ffffff;
 .event-item h4 a:hover,
 .event-item h4 a:active {
     color: #000000;
+}
+
+.event-item p {
+    font-size: 15px;
 }
 
 .event-item .item-links {
@@ -1295,27 +1311,6 @@ color: #ffffff;
     .album-gallery-thumbs {
         padding: 0 55px;
     }
-
-    .event-item {
-        display: flex;
-        justify-content: flex-start;
-    }
-
-    .event-item .date {
-        flex: 0 0 150px;
-        width: 150px;
-        border-right: 1px solid #e2d8d2;
-    }
-
-    .event-item .item-links {
-        flex: 0 0 200px;
-        width: 200px;
-        text-align: right;
-    }
-
-    .event-item .item-info {
-        padding:  0 30px;
-    }
 }
 
 @media screen and (min-width:768px) {
@@ -1343,6 +1338,25 @@ color: #ffffff;
         display: none;
     }
 
+    #calendar .fc-toolbar::before {
+        transform: skewX(-30deg);
+    }
+
+    .event-item .date {
+        border-width: 0 1px 0 0;
+        margin-bottom: 0;
+    }
+
+    .event-item .item-links {
+        text-align: right;
+    }
+
+    .event-item .item-info {
+        padding:  0 30px;
+    }
+}
+
+@media screen and (min-width:992px) {
     .page-sub-title {
         flex-direction: row;
         align-items: center;
@@ -1357,6 +1371,7 @@ color: #ffffff;
     .page-sub-title .year-select {
         margin-left: auto;
     }
+
 }
 
 @media screen and (min-width:1200px) {
