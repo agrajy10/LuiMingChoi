@@ -213,6 +213,52 @@ a:active {
     margin-left: 0;
 }
 
+.login-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    z-index: 1999;
+}
+
+.login-modal .modal-body {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #222;
+    border-radius: 5px;
+    padding: 15px;
+    width: calc(100% - 30px);
+    max-width: 450px;
+}
+
+.login-modal .eclass-form {
+    display: block;
+}
+
+.login-modal .eclass-form .eclass-logo {
+    margin: 40px 0 20px 0;
+    text-align: center;
+}
+
+.login-modal .eclass-form input {
+    width: 100%;
+    max-width: none;
+}
+
+.login-modal .menu-close {
+    width: 30px;
+    height: 30px;
+    font-size: 15px;
+    line-height: 30px;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+}
 
 /*=======Header========*/
 .site-header {
@@ -258,7 +304,7 @@ a:active {
     height: 32px;
     background-color: #ffffff;
     border:1px solid #ffffff;
-    padding: 7px;
+    padding: 7px 7px 7px 27px;
     margin-bottom: 5px;
     font-size: 15px;
     color: #333333;
@@ -272,6 +318,16 @@ a:active {
 
 .eclass-form input:focus {
     border: 1px solid #000000;
+}
+
+.eclass-form input[type="text"] {
+    background: #ffffff url('../images/user.png') no-repeat 5px center;
+    background-size: 19px 20px;
+}
+
+.eclass-form input[type="password"] {
+    background: #ffffff url('../images/password.png') no-repeat 5px center;
+    background-size: 18px 20px;
 }
 
 .eclass-form .input-group {
@@ -439,7 +495,8 @@ a:active {
 
     .site-logo a {
         flex: 0 1 auto;
-        padding-right: 15px;
+        padding: 0 20px;
+        margin: 0 auto;
     }
     
     .site-logo .menu-toggle {

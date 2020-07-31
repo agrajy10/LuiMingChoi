@@ -23,6 +23,9 @@
             <div class="container">
 
                 <div class="site-logo">
+
+                    <button type="button" class="menu-toggle" id="loginModalToggle"><i class="fas fa-user"></i></button>
+
                     <a href="index.php">
                         <img src="images/logo.png" class="img-fluid"
                             alt="SKH St. Simon's Lui Ming Choi Secondary School">
@@ -45,7 +48,7 @@
                     <div>
                         <input type="text" placeholder="名稱" name="">
                         <div class="input-group">
-                            <input type="password" placeholder="密碼">
+                            <input type="password"  placeholder="密碼">
                             <button type="submit"><span>登入</span></button>
                         </div>
                     </div>
@@ -388,9 +391,35 @@
 
         <div class="overlay"></div>
 
+        <div class="login-modal">
+
+            <div class="modal-body">
+
+                <button type="button" class="menu-close" id="loginModalClose"><i class="fas fa-times"></i></button>
+
+                <div class="modal-inner">
+
+                    <form action="" class="eclass-form">
+                        <div class="eclass-logo">
+                            <img src="images/eClass.png" class="img-fluid" alt="eClass Login">
+                        </div>
+                        <div>
+                            <input type="text" placeholder="名稱" name="">
+                            <div class="input-group">
+                                <input type="password"  placeholder="密碼">
+                                <button type="submit"><span>登入</span></button>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
     <!--page-wrap-->
-
 
     <script src="js/jquery.js"></script>
     <script src="js/script.js"></script>

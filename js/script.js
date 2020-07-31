@@ -54,4 +54,13 @@ $(function() {
         $('body').removeClass('menu-active');
     });
 
+    $('#loginModalToggle').click(function(){
+        $('.login-modal').fadeIn('show');
+        $('body').addClass('menu-active');
+    });
+
+    $('#loginModalClose').click(function(){
+        $('.login-modal').hide();
+    });
+
 });
