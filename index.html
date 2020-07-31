@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="packages/core/main.min.css">
+    <link rel="stylesheet" href="packages/daygrid/main.min.css">
     <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -151,6 +153,8 @@
                             </div>
     
                             <div class="content">
+
+                                <div id="homeCalendar"></div>
     
                                 <ul>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
@@ -422,7 +426,31 @@
     <!--page-wrap-->
 
     <script src="js/jquery.js"></script>
+    <script src="packages/core/main.min.js"></script>
+    <script src="packages/daygrid/main.min.js"></script>
+    <script src="packages/interaction/main.min.js"></script>
     <script src="js/script.js"></script>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var calendarEl = document.getElementById('homeCalendar');
+
+            var schoolCalendar = new FullCalendar.Calendar(calendarEl, {
+                plugins: ['interaction', 'dayGrid'],
+                defaultDate: '2020-07-31',
+                editable: true,
+                eventLimit: true,
+                header: {
+                    left: 'prev',
+                    center: 'title',
+                    right: 'next'
+                },
+                contentHeight : 'auto'
+            });
+
+            schoolCalendar.render();
+        });
+    </script>
 
 
 
