@@ -50,8 +50,11 @@ $(function() {
     });
 
     $(window).resize(function() {
-        $(siteMainNav).removeClass('show');
-        $('body').removeClass('menu-active');
+        if($(this).width() > 1200) {
+            $(siteMainNav).removeClass('show');
+            $('.login-modal').hide();
+            $('body').removeClass('menu-active');
+        }
     });
 
     $('#loginModalToggle').click(function(){

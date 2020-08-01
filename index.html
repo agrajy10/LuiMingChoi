@@ -6,13 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | LuiMingChoi</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="packages/core/main.min.css">
     <link rel="stylesheet" href="packages/daygrid/main.min.css">
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -21,7 +20,7 @@
 <body>
 
     <div class="page-wrap">
-
+        <h1 class="txt-hiddden" lang="en">KH St. Simon's Lui Ming Choi Secondary School</h1>
         <header class="site-header">
 
             <div class="container">
@@ -41,11 +40,11 @@
 
                 <div class="moto">
                     <h4>校訓: 勤有功</h4>
-                    <p>LABOR OMNIA VINCIT <br> 敬畏上主是智慧的開端；認識至聖
+                    <p><span>LABOR OMNIA VINCIT</span> <br> 敬畏上主是智慧的開端；認識至聖
                         者就是明智。 (箴言9:10)</p>
                 </div>
 
-                <form action="" class="eclass-form">
+                <form action="index.php" class="eclass-form">
                     <div class="eclass-logo">
                         <img src="images/eClass.png" class="img-fluid" alt="eClass Login">
                     </div>
@@ -138,12 +137,10 @@
         </header>
         <!--site-header-->
 
-        </style>
-
-        <div class="swiper-container">
-            <!-- Additional required wrapper -->
+        <div class="main-slider swiper-container">
+   
             <div class="swiper-wrapper">
-                <!-- Slides -->
+                
                 <div class="swiper-slide"
                     style="background: url('images/slide-1.jpg') no-repeat center center; background-size: cover;">
                     <div class="slide-cpt">
@@ -187,7 +184,7 @@
 
                 <div class="row custom">
 
-                    <div class="col-md-3">
+                    <div class="col-xl-3 col-md-6 order-xl-1">
 
                         <div class="content-block">
 
@@ -204,8 +201,13 @@
                                 <ul>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                     <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
-                                    <li><a href="#">Lorem ipsum dolor sit amet.</a> <span>2020-03-20</span></li>
                                 </ul>
+
+                            </div>
+
+                            <div class="bottom">
+
+                                <a href="#" class="read-more">更多+</a>
 
                             </div>
 
@@ -213,7 +215,22 @@
 
                     </div>
 
-                    <div class="col-md-5">
+                    <div class="col-xl-4 col-md-6 order-xl-3">
+
+                        <div class="user-links">
+
+                            <a href="#"><img src="images/principal-msg.jpg" class="img-fluid" alt="principal-msg"></a>
+                            <a href="#"><img src="images/admission-application.jpg" class="img-fluid"
+                                    alt="principal-msg"></a>
+                            <a href="#"><img src="images/school-notice.jpg" class="img-fluid" alt="principal-msg"></a>
+                            <a href="#"><img src="images/school-articles.jpg" class="img-fluid" alt="principal-msg"></a>
+                            <a href="#"><img src="images/media-reports.jpg" class="img-fluid" alt="principal-msg"></a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-xl-5 order-xl-2">
 
                         <div class="content-block">
 
@@ -285,20 +302,9 @@
 
                     </div>
 
-                    <div class="col-md-4">
+                </div>
 
-                        <div class="user-links">
-
-                            <a href="#"><img src="images/principal-msg.jpg" class="img-fluid" alt="principal-msg"></a>
-                            <a href="#"><img src="images/admission-application.jpg" class="img-fluid"
-                                    alt="principal-msg"></a>
-                            <a href="#"><img src="images/school-notice.jpg" class="img-fluid" alt="principal-msg"></a>
-                            <a href="#"><img src="images/school-articles.jpg" class="img-fluid" alt="principal-msg"></a>
-                            <a href="#"><img src="images/media-reports.jpg" class="img-fluid" alt="principal-msg"></a>
-
-                        </div>
-
-                    </div>
+                <div class="row">
 
                     <div class="col-md-6">
 
@@ -453,7 +459,7 @@
 
                 <div class="modal-inner">
 
-                    <form action="" class="eclass-form">
+                    <form action="index.php" class="eclass-form">
                         <div class="eclass-logo">
                             <img src="images/eClass.png" class="img-fluid" alt="eClass Login">
                         </div>
@@ -479,7 +485,6 @@
     <script src="packages/core/main.min.js"></script>
     <script src="packages/daygrid/main.min.js"></script>
     <script src="packages/interaction/main.min.js"></script>
-    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="js/script.js"></script>
 
@@ -503,7 +508,7 @@
             schoolCalendar.render();
         });
 
-        var mySwiper = new Swiper('.swiper-container', {
+        var mySwiper = new Swiper('.main-slider', {
             // Optional parameters
             loop: true,
             // Navigation arrows
