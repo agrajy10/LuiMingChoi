@@ -1118,6 +1118,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a10306', end
     font-size: 1rem;
 }
 
+.user-links {
+    text-align: center;
+}
+
 .user-links a {
     display: inline-block;
     margin-bottom: 0.5rem;
@@ -1691,37 +1695,6 @@ color: #ffffff;
 
 @media screen and (min-width:768px) {
 
-    .row.custom {
-        margin: 0 -0.3125rem;
-    }
-
-    .row.custom .col-md-3,
-    .row.custom .col-md-5,
-    .row.custom .col-md-6 {
-        padding: 0 0.3125rem;
-    }
-
-    .row.custom .col-md-3 {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 25%;
-                flex: 0 0 25%;
-        max-width: 25%;
-    }
-
-    .row.custom .col-md-5 {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 44%;
-                flex: 0 0 44%;
-        max-width: 44%;
-    }
-
-    .row.custom .col-md-4 {
-        -webkit-box-flex: 0;
-            -ms-flex: 0 0 31%;
-                flex: 0 0 31%;
-        max-width: 31%;
-    }
-
     .page-title {
         height: 400px;
     }
@@ -1794,6 +1767,37 @@ color: #ffffff;
 @media screen and (min-width:1200px) {
     .container {
         max-width: 1200px;
+    }
+
+    .row.custom {
+        margin: 0 -0.3125rem;
+    }
+
+    .row.custom .col-xl-3,
+    .row.custom .col-xl-5,
+    .row.custom .col-xl-6 {
+        padding: 0 0.3125rem;
+    }
+
+    .row.custom .col-xl-3 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+        max-width: 25%;
+    }
+
+    .row.custom .col-xl-5 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 49%;
+                flex: 0 0 59%;
+        max-width: 49%;
+    }
+
+    .row.custom .col-xl-4 {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 26%;
+                flex: 0 0 26%;
+        max-width: 26%;
     }
 }
 
